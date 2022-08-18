@@ -17,11 +17,22 @@
         let x = document.getElementById("polzunon");
 
         function toggle1() {
-            x.style.left = "100px";
+            x.style.left = "150px";
         }
         function toggle2() {
             x.style.left = "0";
         }
+
+        const root = document.querySelector(':root'),
+              rootStyles = getComputedStyle(root);
+
+        document.querySelector('.btn_1').addEventListener('click', () => {
+            root.style.setProperty('--white', '#fff');
+        });
+        document.querySelector('.btn_2').addEventListener('click', () => {
+            root.style.setProperty('--white', '#444446');
+        });
+
     </script>
 </body>
 </html>
