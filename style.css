@@ -39,6 +39,7 @@ body {
     width: 100%;
     margin-top: 200px;
     background-color: var(--white);
+    transition: .5s;
 }
 .btn__box {
     position: relative;
