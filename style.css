@@ -8,19 +8,24 @@
       right: -5px;
       animation-timing-function: ease-out;
     }
-    25% {
-      top: -5px;
-      right: -2px;
-      animation-timing-function: ease-in;
-    }
-    50% {
+    20% {
       top: 0;
       right: 0;
-      animation-timing-function: ease-out;
+      animation-timing-function: ease-in;
     }
-    75% {
+    40% {
       top: 10px;
       right: 5px;
+      animation-timing-function: ease-out;
+    }
+    60% {
+      top: 0;
+      right: 0;
+      animation-timing-function: ease-in;
+    }
+    80% {
+      top: -10px;
+      right: -5px;
       animation-timing-function: ease-in;
     }
     to {
@@ -65,9 +70,8 @@ body {
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-tap-highlight-color: transparent;
 }
-.btn_1:active, .btn_2:active  {
+.btn_1:focus, .btn_2:focus  {
     animation: bounce .15s;
-    background: transparent;
 }
 #polzunon {
     position: absolute;
